@@ -4,7 +4,6 @@
 #include "signal.h"
 #include "getData.h"
 #include "percentPriceData.h"
-#include "parseCSV.h"
 
 class contrarianSignal: public buySellSignal{
 private:

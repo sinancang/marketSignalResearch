@@ -11,10 +11,8 @@ class Data{
     std::string data;
 
 public:
-    Data(){
-    }
-
     virtual double getStandardDev() = 0;
+    virtual double getMean() = 0;
 };
 
 #endif //AI_TRADER_GETDATA_H

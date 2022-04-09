@@ -84,6 +84,12 @@ build CMakeFiles/AI_Trader.dir/percentPriceData.cpp.o: CXX_COMPILER__AI_Trader_D
   OBJECT_DIR = CMakeFiles/AI_Trader.dir
   OBJECT_FILE_DIR = CMakeFiles/AI_Trader.dir
 
+build CMakeFiles/AI_Trader.dir/main.cpp.o: CXX_COMPILER__AI_Trader_Debug /Users/sinancangulan/CLionProjects/AI_Trader/main.cpp || cmake_object_order_depends_target_AI_Trader
+  DEP_FILE = CMakeFiles/AI_Trader.dir/main.cpp.o.d
+  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -std=gnu++14
+  OBJECT_DIR = CMakeFiles/AI_Trader.dir
+  OBJECT_FILE_DIR = CMakeFiles/AI_Trader.dir
+
 build CMakeFiles/AI_Trader.dir/parseCSV.cpp.o: CXX_COMPILER__AI_Trader_Debug /Users/sinancangulan/CLionProjects/AI_Trader/parseCSV.cpp || cmake_object_order_depends_target_AI_Trader
   DEP_FILE = CMakeFiles/AI_Trader.dir/parseCSV.cpp.o.d
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1 -std=gnu++14
@@ -98,7 +104,7 @@ build CMakeFiles/AI_Trader.dir/parseCSV.cpp.o: CXX_COMPILER__AI_Trader_Debug /Us
 #############################################
 # Link the executable AI_Trader
 
-build AI_Trader: CXX_EXECUTABLE_LINKER__AI_Trader_Debug CMakeFiles/AI_Trader.dir/contrarianSignal.cpp.o CMakeFiles/AI_Trader.dir/percentPriceData.cpp.o CMakeFiles/AI_Trader.dir/parseCSV.cpp.o
+build AI_Trader: CXX_EXECUTABLE_LINKER__AI_Trader_Debug CMakeFiles/AI_Trader.dir/contrarianSignal.cpp.o CMakeFiles/AI_Trader.dir/percentPriceData.cpp.o CMakeFiles/AI_Trader.dir/main.cpp.o CMakeFiles/AI_Trader.dir/parseCSV.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -mmacosx-version-min=12.1
   OBJECT_DIR = CMakeFiles/AI_Trader.dir
   POST_BUILD = :

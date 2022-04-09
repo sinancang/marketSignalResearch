@@ -4,7 +4,6 @@
 
 #ifndef AI_TRADER_PARSECSV_H
 #define AI_TRADER_PARSECSV_H
-#include <vector>
 #include <string>
 
 // given a symbol name parses CSV
@@ -12,12 +11,12 @@
 // access function for data
 class parseCSV {
 private:
-    std::vector<std::vector<std::string>> data;
+    const vector<vector<string>> *data;
 
 public:
-    virtual void parseData(const std::string& symbolname) = 0;
+    vector<vector<string>> getData();
 
-    parseCSV(const string& symbol) {}
+    parseCSV(string symbol);
 };
 
 

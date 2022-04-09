@@ -4,13 +4,15 @@
 #include "getData.h"
 #include "parseCSV.h"
 #include <vector>
+#include <string>
+using namespace std;
 
 class percentPriceData: public Data{
 private:
     std::vector<double> *dataList;
 
 public:
-    percentPriceData(parseCSV parsedData) {
+    percentPriceData(vector<vector<string>> rawData) {
         // fetches open and close from parsed data
         // calculates daily percent price change and stores & stores
     }

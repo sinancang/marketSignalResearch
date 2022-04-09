@@ -3,4 +3,4 @@ project(AI_Trader)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(AI_Trader signal.h getData.h contrarianSignal.cpp percentPriceData.cpp percentPriceData.h contrarianSignal.h parseCSV.h)
+add_executable(AI_Trader signal.h getData.h contrarianSignal.cpp percentPriceData.cpp percentPriceData.h contrarianSignal.h parseCSV.h main.cpp parseCSV.cpp)
