@@ -5,17 +5,18 @@
 #ifndef AI_TRADER_PARSECSV_H
 #define AI_TRADER_PARSECSV_H
 #include <string>
+#include <vector>
+using namespace std;
 
 // given a symbol name parses CSV
 // TO DO: parse csv and store data,
 // access function for data
 class parseCSV {
 private:
-    const vector<vector<string>> *data;
+    vector<vector<string>> data;
 
 public:
-    vector<vector<string>> getData();
-
+    const vector<vector<string>>& getData();
     parseCSV(string symbol);
 };
 

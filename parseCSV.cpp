@@ -6,41 +6,32 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-
+#include "parseCSV.h"
 using namespace std;
 
-class parseCSV {
-private:
-    const vector<vector<string>> *data;
+parseCSV::parseCSV(string symbol){
+    string fname = symbol + ".csv";
+    vector<vector<string>> content;
+    vector<string> row;
+    string line, word;
 
-public:
-    parseCSV(string symbolname){
-        string fname = symbolname + ".csv";
-        vector<vector<string>> content;
-        vector<string> row;
-        string line, word;
+    fstream file (fname, ios::in);
+    if (file.is_open()){
+        while (getline(file, line)){
+            row.clear();
 
-        fstream file (fname, ios::in);
-        if (file.is_open()){
-            while (getline(file, line)){
-                row.clear();
+            stringstream str(line);
 
-                stringstream str(line);
-
-                while(getline(str, word, ',')){
-                    row.push_back(word);
-                }
-                content.push_back(row);
+            while(getline(str, word, ',')){
+                row.push_back(word);
             }
-        } else {
-            cout << "Could not open file!" << endl;
+            data.push_back(row);
         }
-
-        data = &content;
+    } else {
+        cout << "Could not open file!" << endl;
     }
+}
 
-    vector<vector<string>> getData(){
-        return *data;
-    }
-
-};
+const vector<vector<string>>& parseCSV::getData(){
+    return data;
+}
