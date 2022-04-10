@@ -23,8 +23,12 @@ public:
     double getMean() override;
 
     // returns i-th entry of data list
-    double& getDatapoint(int i){
+    double getDatapoint(int i){
         return data[i];
+    }
+
+    int getNumData(){
+        return data.size();
     }
 
     vector<double>& getData(){

@@ -17,13 +17,13 @@ int main(){
     // convert raw data to percent change in price data
     percentPriceData *p = new percentPriceData(data);
 
-    for (int i = 0; i < 50; i++){
+    for (int i = 0; i < p->getNumData(); i++){
         cout << p->getDatapoint(i) << endl;
     }
 
 
     // extract volume data
 
-    // feed into contrariansignal to look for signals
+    // feed into contrarian signal object to look for signals
     return 0;
 }
