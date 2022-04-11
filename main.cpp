@@ -3,6 +3,7 @@
 //
 #include "parseCSV.h"
 #include "percentPriceData.h"
+#include "contrarianSignal.h"
 #include "getData.h"
 #include <string>
 #include <vector>
@@ -21,9 +22,14 @@ int main(){
         cout << p->getDatapoint(i) << endl;
     }
 
-
     // extract volume data
+    vector<int> volumeData;
+    for (int i = 0; i < data[6].size(); i++){
+        volumeData[i] = stoi(data[6][i]);
+    }
 
     // feed into contrarian signal object to look for signals
+    // might want to move code only relevant to the contrarian signal to its class
+    // contrarianSignal *cs = new contrarianSignal(2.0);
     return 0;
 }

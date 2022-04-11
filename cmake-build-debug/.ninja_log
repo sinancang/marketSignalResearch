@@ -63,3 +63,6 @@
 3	878	1649561442294409717	CMakeFiles/AI_Trader.dir/percentPriceData.cpp.o	ab0cabb4ece4ef78
 4	1061	1649561442482251269	CMakeFiles/AI_Trader.dir/main.cpp.o	913fe5c15a3e12a6
 1061	1199	1649561442624066257	AI_Trader	ef30fd507c2af59f
+3	1497	1649696943671581983	CMakeFiles/AI_Trader.dir/contrarianSignal.cpp.o	da8746c1a3d6cdee
+7	1724	1649696943906971506	CMakeFiles/AI_Trader.dir/main.cpp.o	913fe5c15a3e12a6
+1724	2489	1649696944676872489	AI_Trader	ef30fd507c2af59f
