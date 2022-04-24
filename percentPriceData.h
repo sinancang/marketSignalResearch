@@ -3,14 +3,12 @@
 //
 #ifndef AI_TRADER_PERCENTPRICEDATA_H
 #define AI_TRADER_PERCENTPRICEDATA_H
-#include "getData.h"
+#include "Data.h"
 #include <vector>
 #include <string>
 using namespace std;
 
 class percentPriceData: public Data {
-private:
-    std::vector<double> data;
 
 public:
     // constructor to convert raw data to price change percentage data

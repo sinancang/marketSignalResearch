@@ -4,7 +4,7 @@
 #include "parseCSV.h"
 #include "percentPriceData.h"
 #include "contrarianSignal.h"
-#include "getData.h"
+#include "Data.h"
 #include <string>
 #include <vector>
 #include <iostream>
@@ -18,6 +18,7 @@ int main(){
     // convert raw data to percent change in price data
     percentPriceData *p = new percentPriceData(data);
 
+    // print for testing purposes
     for (int i = 0; i < p->getNumData(); i++){
         cout << p->getDatapoint(i) << endl;
     }
